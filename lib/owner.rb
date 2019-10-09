@@ -33,4 +33,8 @@ class Owner
     @@all.clear 
   end 
   
+  def cats
+    self.cats 
+  end 
+  
 end
