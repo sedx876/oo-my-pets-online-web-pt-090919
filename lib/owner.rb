@@ -6,6 +6,7 @@ class Owner
   
   def initialize(name)
     @name = name
+    @cat = cat 
     @@all << self 
   end 
   
