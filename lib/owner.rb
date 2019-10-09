@@ -76,4 +76,7 @@ class Owner
     self.dogs.clear
   end
   
+  def list_pets 
+    self.dogs.count
+  
 end
