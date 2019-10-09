@@ -7,4 +7,8 @@ class Owner
     @species = species 
   end 
   
+  def name
+    @name 
+  end 
+  
 end
