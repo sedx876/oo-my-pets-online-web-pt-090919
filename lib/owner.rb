@@ -64,7 +64,7 @@ class Owner
   end
   
   def sell_pets
-    if @all == 0 
+    if @all.clear  
       @mood = "nervous"
     end 
   end 
