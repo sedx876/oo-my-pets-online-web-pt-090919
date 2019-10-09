@@ -64,9 +64,16 @@ class Owner
   end
   
   def sell_pets
-    if @all.clear  
-      @mood = "nervous"
-    end 
-  end 
+    self.cats.each do |item|
+      item.mood = "nervous"
+      item.owner = nil
+    end
+    self.dogs.each do |item|
+      item.mood = "nervous"
+      item.owner = nil
+    end
+    self.cats.clear
+    self.dogs.clear
+  end
   
 end
